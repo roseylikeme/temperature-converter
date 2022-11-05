@@ -1,8 +1,63 @@
 body, html {
     height: 100%;   
-    background-color: pink;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 222, 229);
+    font-family: 'Roboto Condensed',sans-serif;
 }
+
+/* Navbar stuff */
+.navbar-light .navbar-nav .nav-link {
+    color: palevioletred;
+}
+
+/* White Underline Animation */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;     
+    max-width: 600px;
+  }
+  
+  @media screen and (min-width: 600px) {
+      ul {
+          flex-direction: row;
+      }
+  }
+  
+  li { 
+    position: relative; 
+    padding: 15px 0;
+  }
+  
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 .container {
     display: flex;
