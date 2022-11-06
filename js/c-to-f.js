@@ -3,9 +3,17 @@
 
 window.onload = init;
 
+function clearResult(){
+    document.getElementById("toFahrenheitField").value = ''
+    document.getElementById("celciusInput").value = ''
+}
+
 function init() {
     const toFahrenheitBtnClick = document.getElementById("toFahrenheitBtn");
     toFahrenheitBtnClick.onclick = convertToFahrenheit;
+
+    const resetBtnClick = document.getElementById("resetBtn");
+    resetBtnClick.onclick = clearResult;
 }
 
 function convertToFahrenheit() {

@@ -28,18 +28,18 @@ main {
     max-width: 600px;
   }
   
-  @media screen and (min-width: 600px) {
-      nav-link ul {
-          flex-direction: row;
-      }
-  }
-  
-  .nav-link li { 
+@media screen and (min-width: 600px) {
+    nav-link ul {
+        flex-direction: row;
+    }
+}
+
+.nav-link li { 
     position: relative; 
     padding: 15px 0;
-  }
-  
-  a.nav-link {
+}
+
+a.nav-link {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -47,9 +47,9 @@ main {
     display: inline-block;
     padding: 15px 20px;
     position: relative;
-  }
-  
-  a.nav-link::after { 
+}
+
+a.nav-link::after { 
     content: "";
     position: absolute;
     bottom: 0;
@@ -60,12 +60,12 @@ main {
     width: 0;
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  }
+}
   
-  a.nav-link:hover::after { 
+a.nav-link:hover::after { 
     width: 100%; 
     left: 0; 
-  }
+}
 
 /* Main Content */
 .container {

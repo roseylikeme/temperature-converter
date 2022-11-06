@@ -3,6 +3,11 @@
 
 window.onload = init;
 
+function clearResult(){
+    document.getElementById("answerField").value = ''
+    document.getElementById("fahrenInput").value = ''
+}
+
 function init() {
     const toCelciusBtnClick = document.getElementById("toCelciusBtn");
     toCelciusBtnClick.onclick = convertToCelcius;
